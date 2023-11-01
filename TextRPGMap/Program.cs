@@ -87,6 +87,10 @@ namespace TextRPGMap
         }
         static void DisplayMap(int scale)
         {
+            if(scale >= 0)
+            {
+                scale = 1;
+            }
             ShowLegend();
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
