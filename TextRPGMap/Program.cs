@@ -90,14 +90,17 @@ namespace TextRPGMap
             ShowLegend();
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
-                for(mapX = 0; mapX <= sizeX; mapX++)
+                for(int j = 0; j < scale; j++)
                 {
-                    for(int i = 0; i < scale; i++)
+                    for(mapX = 0; mapX <= sizeX; mapX++)
                     {
-                        Console.Write(map[mapY,mapX]);
+                        for(int i = 0; i < scale; i++)
+                        {
+                            Console.Write(map[mapY,mapX]);
+                        }
                     }
+                    Console.Write("\n");
                 }
-                Console.Write("\n");
             }
         }
     }
