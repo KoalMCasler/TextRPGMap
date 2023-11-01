@@ -14,10 +14,10 @@ namespace TextRPGMap
         {'^','^','`','`','`','`','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','~','~','~','`','`','`'},
         {'^','^','`','`','`','*','*','`','`','`','`','`','`','*','`','`','`','`','`','`','`','`','~','~','~','`','`','`','`','`'},
         {'^','`','`','`','`','`','`','`','`','`','`','`','*','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
-        {'`','`','`','`','~','~','~','`','`','`','`','*','*','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','`','`','`','`','*','*','*','*','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`'},
         {'`','`','`','`','~','~','~','`','`','`','`','`','*','*','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
         {'`','`','`','~','~','~','~','`','`','`','`','`','`','*','*','*','*','`','`','`','`','`','^','^','`','`','`','`','`','`'},
-        {'`','`','`','`','`','~','~','~','`','`','`','`','`','`','*','*','`','`','`','`','`','^','^','^','^','`','`','`','`','`'},
+        {'`','`','`','`','`','~','~','~','`','`','`','`','*','*','*','*','`','`','`','`','`','^','^','^','^','`','`','`','`','`'},
         {'`','`','`','`','`','~','~','~','~','`','`','`','`','`','`','*','`','`','`','`','`','`','`','^','^','^','^','`','`','`'},
         {'`','`','`','`','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
         {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
@@ -30,19 +30,15 @@ namespace TextRPGMap
         static int mapY;
         static int sizeX;
         static int sizeY;
-        // map legend:
-        // ^ = mountain
-        // ` = grass
-        // ~ = water
-        // * = trees
+        static char border;
         static void Main()
         {
-            sizeX = 29;
-            sizeY = 11;
+            sizeX = map.GetLength(1) - 1;
+            sizeY = map.GetLength(0) - 1;
             gameOver = false;
-            //GameLoop();
+            border = '#';
             DisplayMap();
-            ShowLegend();
+            DisplayMap(3);
             Console.ReadKey();
         }
         static void ShowLegend()
@@ -53,6 +49,7 @@ namespace TextRPGMap
             Console.WriteLine("` = grass");
             Console.WriteLine("~ = water");
             Console.WriteLine("* = trees");
+            Console.WriteLine("\n");
         }
         static void CountUp()
         {
@@ -77,24 +74,30 @@ namespace TextRPGMap
         }
         static void DisplayMap()
         {
+            ShowLegend();
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
-                    Console.SetCursorPosition(mapX, mapY);
+                    //Console.SetCursorPosition(mapX, mapY); //brute force method
                     Console.Write(map[mapY,mapX]);
                 }
+                Console.Write("\n");
             }
         }
         static void DisplayMap(int scale)
         {
+            ShowLegend();
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
-                    Console.SetCursorPosition(mapX, mapY);
-                    Console.Write(map[mapY,mapX]);
+                    for(int i = 0; i < scale; i++)
+                    {
+                        Console.Write(map[mapY,mapX]);
+                    }
                 }
+                Console.Write("\n");
             }
         }
     }
