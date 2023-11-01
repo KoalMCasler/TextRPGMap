@@ -36,7 +36,7 @@ namespace TextRPGMap
             sizeX = map.GetLength(1) - 1;
             sizeY = map.GetLength(0) - 1;
             gameOver = false;
-            border = '#';
+            border = '#'; //Dark red
             DisplayMap();
             DisplayMap(3);
             DisplayMap(-5);
@@ -46,10 +46,10 @@ namespace TextRPGMap
         {
             Console.WriteLine("\n");
             Console.WriteLine("map legend:");
-            Console.WriteLine("^ = mountain");
-            Console.WriteLine("` = grass");
-            Console.WriteLine("~ = water");
-            Console.WriteLine("* = trees");
+            Console.WriteLine("^ = mountain"); //gray
+            Console.WriteLine("` = grass"); //green
+            Console.WriteLine("~ = water"); //blue
+            Console.WriteLine("* = trees"); //dark green
             Console.WriteLine("\n");
         }
         static void CountUp()
@@ -76,15 +76,60 @@ namespace TextRPGMap
         static void DisplayMap()
         {
             ShowLegend();
+            for(int k = 0; k < (sizeX + 2); k++)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Write(border);
+            }
+            Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Write(border);
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
                     //Console.SetCursorPosition(mapX, mapY); //brute force method
-                    Console.Write(map[mapY,mapX]);
+                    if(map[mapY,mapX] == '`')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '*')
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '~')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.BackgroundColor = ConsoleColor.Blue;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '^')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.Write(map[mapY,mapX]);
+                    }
                 }
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Write(border);
                 Console.Write("\n");
             }
+            for(int k = 0; k < (sizeX + 2); k++)
+            {
+                Console.ForegroundColor = ConsoleColor.DarkRed;
+                Console.BackgroundColor = ConsoleColor.DarkRed;
+                Console.Write(border);
+            }
+            Console.Write("\n");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
         }
         static void DisplayMap(int scale)
         {
@@ -93,20 +138,70 @@ namespace TextRPGMap
                 scale = 1;
             }
             ShowLegend();
+            for(int k = 0; k < (sizeX + 2); k++)
+            {
+                for(int l = 0; l < scale; l++)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    Console.Write(border);
+                }
+            }
+            Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
                 for(int j = 0; j < scale; j++)
                 {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    Console.Write(border);
                     for(mapX = 0; mapX <= sizeX; mapX++)
                     {
                         for(int i = 0; i < scale; i++)
                         {
-                            Console.Write(map[mapY,mapX]);
+                            if(map[mapY,mapX] == '`')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.BackgroundColor = ConsoleColor.Green;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '*')
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '~')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Blue;
+                        Console.BackgroundColor = ConsoleColor.Blue;
+                        Console.Write(map[mapY,mapX]);
+                    }
+                    if(map[mapY,mapX] == '^')
+                    {
+                        Console.ForegroundColor = ConsoleColor.Gray;
+                        Console.BackgroundColor = ConsoleColor.Gray;
+                        Console.Write(map[mapY,mapX]);
+                    }
                         }
                     }
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    Console.Write(border);
                     Console.Write("\n");
                 }
             }
+            for(int k = 0; k < (sizeX + 2); k++)
+            {
+                for(int l = 0; l < scale; l++)
+                {
+                    Console.ForegroundColor = ConsoleColor.DarkRed;
+                    Console.BackgroundColor = ConsoleColor.DarkRed;
+                    Console.Write(border);
+                }
+            }
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.BackgroundColor = ConsoleColor.Black;
         }
     }
 }
