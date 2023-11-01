@@ -39,6 +39,7 @@ namespace TextRPGMap
             border = '#';
             DisplayMap();
             DisplayMap(3);
+            DisplayMap(-5);
             Console.ReadKey();
         }
         static void ShowLegend()
@@ -87,7 +88,7 @@ namespace TextRPGMap
         }
         static void DisplayMap(int scale)
         {
-            if(scale >= 0)
+            if(scale <= 0)
             {
                 scale = 1;
             }
