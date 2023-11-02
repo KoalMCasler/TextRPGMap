@@ -59,11 +59,16 @@ namespace TextRPGMap
         {
             Console.WriteLine("\n");
             Console.WriteLine("map legend:");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(string.Format("{0} = mountains",(char)30)); //gray
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
             Console.WriteLine(string.Format("{0} = grass",(char)15)); //green
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(string.Format("{0} = water",(char)187)); //blue
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(string.Format("{0} = trees",(char)23)); //dark green
             Console.WriteLine("\n");
+            Console.ForegroundColor = ConsoleColor.White;
         }
         static void CountUp()
         {
@@ -113,7 +118,7 @@ namespace TextRPGMap
                     }
                     if(map[mapY,mapX] == (char)23)
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.BackgroundColor = ConsoleColor.DarkGreen;
                         Console.Write(map[mapY,mapX]);
                     }
@@ -200,7 +205,7 @@ namespace TextRPGMap
                     }
                     if(map[mapY,mapX] == (char)23)
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkCyan;
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.BackgroundColor = ConsoleColor.DarkGreen;
                         Console.Write(map[mapY,mapX]);
                     }
