@@ -10,27 +10,27 @@ namespace TextRPGMap
     {
         static char[,] map = new char[,] // dimensions defined by following data:
         {
-        {(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)30,(char)30,(char)30},
-        {(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)30,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)187,(char)187,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)30},
-        {(char)30,(char)30,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30,(char)30},
-        {(char)30,(char)30,(char)30,(char)30,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)30,(char)30,(char)30,(char)30},
+        {(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)30,(char)30},
+        {(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)187,(char)187,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)30},
+        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30},
+        {(char)30,(char)30,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30},
+        {(char)30,(char)30,(char)30,(char)30,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)30,(char)30,(char)30},
         };
 
         static bool gameOver;
@@ -165,7 +165,7 @@ namespace TextRPGMap
             }
             if(scale == 3)
             {
-                borderSize = map.GetLength(1)+1;
+                borderSize = map.GetLength(1);
             }
             if(scale > 3)
             {
@@ -184,6 +184,11 @@ namespace TextRPGMap
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.Write(border);
                 }
+            }
+            if(scale == 3)
+            {
+                Console.Write(border);
+                Console.Write(border);
             }
             Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
@@ -237,6 +242,11 @@ namespace TextRPGMap
                     Console.BackgroundColor = ConsoleColor.Red;
                     Console.Write(border);
                 }
+            }
+            if(scale == 3)
+            {
+                Console.Write(border);
+                Console.Write(border);
             }
             Console.Write("\n");
             Console.ForegroundColor = ConsoleColor.White;
