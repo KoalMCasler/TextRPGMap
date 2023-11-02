@@ -41,13 +41,11 @@ namespace TextRPGMap
         static int sizeY;
         static char border;
         static int borderSize;
-        static int borderScale;
         static void Main()
         {
             sizeX = map.GetLength(1) - 1;
             sizeY = map.GetLength(0) - 1;
-            borderSize = map.GetLength(1)+2;
-            
+            borderSize = map.GetLength(1) + 2;
             gameOver = false;
             border = ((char)166); //Dark red
             DisplayMap();
@@ -153,9 +151,24 @@ namespace TextRPGMap
             if(scale <= 0)
             {
                 Console.WriteLine("Scale cannot be less than 1. It was set to {0}.", scale);
+                borderSize = map.GetLength(1) + 2;
                 scale = 1;
             }
-            borderScale = (scale * 2) - (scale - 1);
+            if(scale == 2)
+            {
+                borderSize--;
+            }
+            if(scale == 3)
+            {
+                borderSize = map.GetLength(1)+1;
+            }
+            if(scale > 3)
+            {
+                Console.WriteLine("Scale cannot be more than 3. It was set to {0}.", scale);
+                scale = 3;
+                borderSize = map.GetLength(1);
+            }
+
             Console.WriteLine("Scale has been set to {0}", scale);
             ShowLegend();
             for(int k = 0; k < borderSize; k++)
