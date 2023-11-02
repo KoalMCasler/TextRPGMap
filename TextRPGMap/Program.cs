@@ -158,7 +158,7 @@ namespace TextRPGMap
             borderScale = (scale * 2) - (scale - 1);
             Console.WriteLine("Scale has been set to {0}", scale);
             ShowLegend();
-            for(int k = 0; k < (borderSize - (scale -1)); k++)
+            for(int k = 0; k < borderSize; k++)
             {
                 for(int l = 0; l < scale; l++)
                 {
@@ -211,7 +211,7 @@ namespace TextRPGMap
                     Console.Write("\n");
                 }
             }
-            for(int k = 0; k < (borderSize - (scale-1)); k++)
+            for(int k = 0; k < borderSize; k++)
             {
                 for(int l = 0; l < scale; l++)
                 {
