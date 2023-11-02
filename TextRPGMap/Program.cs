@@ -43,6 +43,8 @@ namespace TextRPGMap
         static int borderSize;
         static void Main()
         {
+            Console.WriteLine("Press any key to start.");
+            Console.ReadKey(true);
             sizeX = map.GetLength(1) - 1;
             sizeY = map.GetLength(0) - 1;
             borderSize = map.GetLength(1) + 2;
@@ -53,7 +55,9 @@ namespace TextRPGMap
             DisplayMap(2);
             DisplayMap(3);
             DisplayMap(-5);
-            Console.ReadKey();
+            DisplayMap(5);
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey(true);
         }
         static void ShowLegend()
         {
@@ -173,7 +177,7 @@ namespace TextRPGMap
                 scale = 3;
                 borderSize = map.GetLength(1);
             }
-
+            Console.WriteLine("The method with scaling");
             Console.WriteLine("Scale has been set to {0}", scale);
             ShowLegend();
             for(int k = 0; k < borderSize; k++)
@@ -185,7 +189,7 @@ namespace TextRPGMap
                     Console.Write(border);
                 }
             }
-            if(scale == 3)
+            if(scale >= 3)
             {
                 Console.Write(border);
                 Console.Write(border);
@@ -243,7 +247,7 @@ namespace TextRPGMap
                     Console.Write(border);
                 }
             }
-            if(scale == 3)
+            if(scale >= 3)
             {
                 Console.Write(border);
                 Console.Write(border);
