@@ -10,27 +10,27 @@ namespace TextRPGMap
     {
         static char[,] map = new char[,] // dimensions defined by following data:
         {
-        {(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)30,(char)30},
-        {(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)187,(char)187,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)187,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)187,(char)187,(char)15,(char)23,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)187,(char)187,(char)187,(char)15,(char)15,(char)15,(char)23,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)30,(char)30,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)15,(char)30},
-        {(char)30,(char)15,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30},
-        {(char)30,(char)30,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30},
-        {(char)30,(char)30,(char)30,(char)30,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)30,(char)30,(char)30},
+        {'^','^','^','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','~','~','`','`','^','^'},
+        {'^','^','`','`','`','`','^','^','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','~','~','~','`','`','`','^'},
+        {'^','`','`','`','`','^','^','`','`','`','`','`','`','*','`','`','`','`','`','`','`','`','~','~','~','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','`','`','`','`','`','*','*','*','`','`','`','`','`','`','~','~','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','~','~','~','`','`','`','`','*','*','*','*','*','^','`','`','`','~','~','`','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','~','~','~','`','`','`','`','`','*','*','*','*','`','`','`','`','~','~','`','`','`','`','`','`','`','`','^'},
+        {'^','`','`','~','~','~','~','`','`','`','`','`','`','*','*','^','^','`','`','`','~','~','^','^','`','`','`','`','`','`','^'},
+        {'^','`','`','`','~','~','~','~','`','`','`','`','*','*','*','^','`','`','`','`','~','^','^','^','^','`','`','`','`','`','^'},
+        {'^','`','`','`','~','~','~','~','~','`','`','`','`','`','*','^','`','`','`','`','`','`','^','^','^','^','^','`','`','`','^'},
+        {'^','`','`','`','~','~','~','~','`','`','`','`','`','`','*','*','`','`','`','`','`','`','`','^','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','~','~','`','`','`','`','`','^','*','*','`','`','`','`','`','`','^','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','~','`','`','`','`','`','*','*','*','`','`','`','`','`','`','^','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','~','`','`','`','`','~','~','*','*','`','`','`','`','`','`','`','^','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','`','~','`','`','~','~','`','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','`','~','~','~','~','`','`','`','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','`','~','`','~','`','`','`','`','`','`','`','`','`','*','`','`','`','`','`','`','`','`','`','`','^'},
+        {'^','`','`','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','*','*','*','`','`','`','`','`','`','`','^','`','^'},
+        {'^','`','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','*','*','`','`','`','`','`','`','`','^','^','`','^'},
+        {'^','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^'},
+        {'^','^','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^'},
+        {'^','^','^','^','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^','^'},
         };
         static bool gameOver;
         static int loopIndex;
@@ -40,6 +40,10 @@ namespace TextRPGMap
         static int sizeY;
         static char border;
         static int borderSize;
+        static char mountain = (char)30;
+        static char grass = (char)15;
+        static char water = (char)187;
+        static char trees = (char)23;
         static void Main()
         {
             Console.WriteLine("Press any key to start drawing maps.");
@@ -62,16 +66,23 @@ namespace TextRPGMap
         {
             Console.WriteLine("\n");
             Console.WriteLine("map legend:");
-            Console.ForegroundColor = ConsoleColor.DarkGray;
-            Console.WriteLine(string.Format("{0} = mountains",(char)30)); //gray
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(string.Format("{0} = grass",(char)15)); //dark green
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine(string.Format("{0} = water",(char)187)); //blue
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(string.Format("{0} = trees",(char)23)); //green
+            SetColorMountain();
+            Console.Write(mountain);
+            SetColorDefault();
+            Console.WriteLine(" = mountains"); //gray
+            SetColorGrass();
+            Console.Write(grass);
+            SetColorDefault();
+            Console.WriteLine(" = grass"); //dark green
+            SetColorWater();
+            Console.Write(water);
+            SetColorDefault();
+            Console.WriteLine(" = water"); //blue
+            SetColorTrees();
+            Console.Write(trees);
+            SetColorDefault();
+            Console.WriteLine(" = trees"); //green
             Console.WriteLine("\n");
-            Console.ForegroundColor = ConsoleColor.White;
         }
         static void CountUp()
         {
@@ -99,58 +110,49 @@ namespace TextRPGMap
             ShowLegend();
             for(int k = 0; k < (sizeX + 3); k++)
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.BackgroundColor = ConsoleColor.Red;
+                SetColorBorder();
                 Console.Write(border);
             }
             Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.BackgroundColor = ConsoleColor.Red;
+                SetColorBorder();
                 Console.Write(border);
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
                     //Console.SetCursorPosition(mapX, mapY); //brute force method added before loops.
-                    if(map[mapY,mapX] == (char)15)
+                    if(map[mapY,mapX] == '`')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkGreen;
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorGrass();
+                        Console.Write(grass);
                     }
-                    if(map[mapY,mapX] == (char)23)
+                    if(map[mapY,mapX] == '*')
                     {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.BackgroundColor = ConsoleColor.DarkGreen;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorTrees();
+                        Console.Write(trees);
                     }
-                    if(map[mapY,mapX] == (char)187)
+                    if(map[mapY,mapX] == '~')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkBlue;
-                        Console.BackgroundColor = ConsoleColor.Blue;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorWater();
+                        Console.Write(water);
                     }
-                    if(map[mapY,mapX] == (char)30)
+                    if(map[mapY,mapX] == '^')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.BackgroundColor = ConsoleColor.Gray;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorMountain();
+                        Console.Write(mountain);
                     }
                 }
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.BackgroundColor = ConsoleColor.Red;
+                SetColorBorder();
                 Console.Write(border);
                 Console.Write("\n");
             }
             for(int k = 0; k < (sizeX + 3); k++)
             {
-                Console.ForegroundColor = ConsoleColor.DarkRed;
-                Console.BackgroundColor = ConsoleColor.Red;
+                SetColorBorder();
                 Console.Write(border);
             }
             Console.Write("\n");
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.BackgroundColor = ConsoleColor.Black;
+            SetColorDefault();
             Console.Write("\n");
         }
         static void DisplayMap(int scale)
@@ -182,8 +184,7 @@ namespace TextRPGMap
             {
                 for(int l = 0; l < scale; l++)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    SetColorBorder();
                     Console.Write(border);
                 }
             }
@@ -197,41 +198,35 @@ namespace TextRPGMap
             {
                 for(int j = 0; j < scale; j++)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    SetColorBorder();
                     Console.Write(border);
                     for(mapX = 0; mapX <= sizeX; mapX++)
                     {
                         for(int i = 0; i < scale; i++)
                         {
-                            if(map[mapY,mapX] == (char)15)
+                            if(map[mapY,mapX] == '`')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkGreen;
-                        Console.BackgroundColor = ConsoleColor.Green;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorGrass();
+                        Console.Write(grass);
                     }
-                    if(map[mapY,mapX] == (char)23)
+                    if(map[mapY,mapX] == '*')
                     {
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.BackgroundColor = ConsoleColor.DarkGreen;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorTrees();
+                        Console.Write(trees);
                     }
-                    if(map[mapY,mapX] == (char)187)
+                    if(map[mapY,mapX] == '~')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkBlue;
-                        Console.BackgroundColor = ConsoleColor.Blue;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorWater();
+                        Console.Write(water);
                     }
-                    if(map[mapY,mapX] == (char)30)
+                    if(map[mapY,mapX] == '^')
                     {
-                        Console.ForegroundColor = ConsoleColor.DarkGray;
-                        Console.BackgroundColor = ConsoleColor.Gray;
-                        Console.Write(map[mapY,mapX]);
+                        SetColorMountain();
+                        Console.Write(mountain);
                     }
                         }
                     }
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    SetColorBorder();
                     Console.Write(border);
                     Console.Write("\n");
                 }
@@ -240,8 +235,7 @@ namespace TextRPGMap
             {
                 for(int l = 0; l < scale; l++)
                 {
-                    Console.ForegroundColor = ConsoleColor.DarkRed;
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    SetColorBorder();
                     Console.Write(border);
                 }
             }
@@ -251,9 +245,38 @@ namespace TextRPGMap
                 Console.Write(border);
             }
             Console.Write("\n");
+            SetColorDefault();
+            Console.Write("\n");
+        }
+        static void SetColorDefault()
+        {
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Black;
-            Console.Write("\n");
+        }
+        static void SetColorMountain()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.BackgroundColor = ConsoleColor.Gray;
+        }
+        static void SetColorGrass()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.BackgroundColor = ConsoleColor.Green;
+        }
+        static void SetColorTrees()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.DarkGreen;
+        }
+        static void SetColorWater()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+            Console.BackgroundColor = ConsoleColor.Blue;
+        }
+        static void SetColorBorder()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.BackgroundColor = ConsoleColor.Red;
         }
     }
 }
