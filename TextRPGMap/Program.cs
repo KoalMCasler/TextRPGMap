@@ -65,11 +65,11 @@ namespace TextRPGMap
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine(string.Format("{0} = mountains",(char)30)); //gray
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine(string.Format("{0} = grass",(char)15)); //green
+            Console.WriteLine(string.Format("{0} = grass",(char)15)); //dark green
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine(string.Format("{0} = water",(char)187)); //blue
             Console.ForegroundColor = ConsoleColor.Green;
-            Console.WriteLine(string.Format("{0} = trees",(char)23)); //dark green
+            Console.WriteLine(string.Format("{0} = trees",(char)23)); //green
             Console.WriteLine("\n");
             Console.ForegroundColor = ConsoleColor.White;
         }
@@ -80,7 +80,6 @@ namespace TextRPGMap
             {
                 Console.Write(loopIndex + " ");
             }
-
         }
         static void GameLoop()
         {
@@ -112,7 +111,7 @@ namespace TextRPGMap
                 Console.Write(border);
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
-                    //Console.SetCursorPosition(mapX, mapY); //brute force method
+                    //Console.SetCursorPosition(mapX, mapY); //brute force method added before loops.
                     if(map[mapY,mapX] == (char)15)
                     {
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
