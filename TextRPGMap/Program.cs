@@ -32,7 +32,6 @@ namespace TextRPGMap
         {(char)30,(char)30,(char)15,(char)15,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)23,(char)30},
         {(char)30,(char)30,(char)30,(char)30,(char)187,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)15,(char)23,(char)23,(char)30,(char)30,(char)30},
         };
-
         static bool gameOver;
         static int loopIndex;
         static int mapX;
