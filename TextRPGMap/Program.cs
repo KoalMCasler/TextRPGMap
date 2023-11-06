@@ -42,7 +42,7 @@ namespace TextRPGMap
         static int borderSize;
         static void Main()
         {
-            Console.WriteLine("Press any key to start.");
+            Console.WriteLine("Press any key to start drawing maps.");
             Console.ReadKey(true);
             sizeX = map.GetLength(1) - 1;
             sizeY = map.GetLength(0) - 1;
