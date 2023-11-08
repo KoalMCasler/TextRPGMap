@@ -10,28 +10,29 @@ namespace TextRPGMap
     {
         static char[,] map = new char[,] // dimensions defined by following data:
         {
-        {'^','^','^','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','~','~','`','`','^','^'},
-        {'^','^','`','`','`','`','^','^','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','~','~','~','`','`','`','^'},
-        {'^','`','`','`','`','^','^','`','`','`','`','`','`','*','`','`','`','`','`','`','`','`','~','~','~','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','`','`','`','`','`','*','*','*','`','`','`','`','`','`','~','~','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','~','~','~','`','`','`','`','*','*','*','*','*','^','`','`','`','~','~','`','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','~','~','~','`','`','`','`','`','*','*','*','*','`','`','`','`','~','~','`','`','`','`','`','`','`','`','^'},
-        {'^','`','`','~','~','~','~','`','`','`','`','`','`','*','*','^','^','`','`','`','~','~','^','^','`','`','`','`','`','`','^'},
-        {'^','`','`','`','~','~','~','~','`','`','`','`','*','*','*','^','`','`','`','`','~','^','^','^','^','`','`','`','`','`','^'},
-        {'^','`','`','`','~','~','~','~','~','`','`','`','`','`','*','^','`','`','`','`','`','`','^','^','^','^','^','`','`','`','^'},
-        {'^','`','`','`','~','~','~','~','`','`','`','`','`','`','*','*','`','`','`','`','`','`','`','^','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','~','~','`','`','`','`','`','^','*','*','`','`','`','`','`','`','^','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','~','`','`','`','`','`','*','*','*','`','`','`','`','`','`','^','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','~','`','`','`','`','~','~','*','*','`','`','`','`','`','`','`','^','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','`','~','`','`','~','~','`','*','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','`','~','~','~','~','`','`','`','*','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','`','~','`','~','`','`','`','`','`','`','`','`','`','*','`','`','`','`','`','`','`','`','`','`','^'},
-        {'^','`','`','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','*','*','*','`','`','`','`','`','`','`','^','`','^'},
-        {'^','`','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','*','*','`','`','`','`','`','`','`','^','^','`','^'},
-        {'^','`','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^'},
-        {'^','^','`','`','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^'},
-        {'^','^','^','^','~','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','^','^'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','#','#','#','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','#','#','#','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','#','#','#','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','`','`','`','`','~','~','~','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','^','^','^','^','^','^','^','^','^','^','`','`','~','~','~','~','~','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','^','`','`','`','`','`','`','^','^','^','`','`','~','~','~','~','~','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','^','`','`','`','`','`','`','^','^','^','`','`','~','~','~','~','~','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','~','`','`','`','`','^','^','^','`','`','`','~','#','~','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','^','`','`','`','`','^','^','^','`','`','`','`','^','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','^','`','`','`','`','^','^','^','`','`','`','`','^','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','^','^','^','^','^','^','^','^','^','^','^','^','^','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','^','`','`','`','`','^','^','^','`','`','`','`','^','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','^','`','`','`','`','^','^','^','`','`','`','`','^','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','~','~','~','~','~','`','`','`','`','^','^','^','`','`','`','`','^','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','*','*','*','*','*','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','^','^','^','*','*','*','*','*','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','`','*','*','*','*','*','@','@','@','@','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','`','*','*','*','*','*','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','`','*','*','*','*','*','`','`','`','`','`','`','`','`','`','`'},
+        {'`','`','`','`','`','`','`','`','`','`','`','`','`','`','^','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`','`'},
         };
+        //now a Sci-fi station map. 
         static bool gameOver;
         static int loopIndex;
         static int mapX;
@@ -40,10 +41,12 @@ namespace TextRPGMap
         static int sizeY;
         static char border;
         static int borderSize;
-        static char mountain = (char)30;
-        static char grass = (char)15;
-        static char water = (char)187;
-        static char trees = (char)23;
+        static char hallway = (char)30;
+        static char space = (char)247;
+        static char habitation = (char)127;
+        static char power = (char)164;
+        static char engineering = (char)29;
+        static char command = (char)199;
         static void Main()
         {
             Console.WriteLine("Press any key to start drawing maps.");
@@ -52,7 +55,7 @@ namespace TextRPGMap
             sizeY = map.GetLength(0) - 1;
             borderSize = map.GetLength(1) + 2;
             gameOver = false;
-            border = ((char)166); //Dark red
+            border = ((char)4); //Dark red
             DisplayMap();
             DisplayMap(1);
             DisplayMap(2);
@@ -66,22 +69,30 @@ namespace TextRPGMap
         {
             Console.WriteLine("\n");
             Console.WriteLine("map legend:");
-            SetColorMountain();
-            Console.Write(mountain);
+            SetColorHallway();
+            Console.Write(hallway);
             SetColorDefault();
-            Console.WriteLine(" = mountains"); //gray
-            SetColorGrass();
-            Console.Write(grass);
+            Console.WriteLine(" = hallways"); //gray
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.Write(space);
             SetColorDefault();
-            Console.WriteLine(" = grass"); //dark green
-            SetColorWater();
-            Console.Write(water);
+            Console.WriteLine(" = space"); //dark green
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.Write(habitation);
             SetColorDefault();
-            Console.WriteLine(" = water"); //blue
-            SetColorTrees();
-            Console.Write(trees);
+            Console.WriteLine(" = habitation"); //blue
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(power);
             SetColorDefault();
-            Console.WriteLine(" = trees"); //green
+            Console.WriteLine(" = power"); //green
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write(command);
+            SetColorDefault();
+            Console.WriteLine(" = command"); //green
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.Write(engineering);
+            SetColorDefault();
+            Console.WriteLine(" = engineering"); //green
             Console.WriteLine("\n");
         }
         static void CountUp()
@@ -112,47 +123,66 @@ namespace TextRPGMap
             {
                 SetColorBorder();
                 Console.Write(border);
+                SetColorDefault();
             }
             Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
             {
                 SetColorBorder();
                 Console.Write(border);
+                SetColorDefault();
                 for(mapX = 0; mapX <= sizeX; mapX++)
                 {
                     //Console.SetCursorPosition(mapX, mapY); //brute force method added before loops.
                     if(map[mapY,mapX] == '`')
                     {
-                        SetColorGrass();
-                        Console.Write(grass);
+                        SetColorSpace();
+                        Console.Write(space);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '*')
                     {
-                        SetColorTrees();
-                        Console.Write(trees);
+                        SetColorPower();
+                        Console.Write(power);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '~')
                     {
-                        SetColorWater();
-                        Console.Write(water);
+                        SetColorHabitation();
+                        Console.Write(habitation);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '^')
                     {
-                        SetColorMountain();
-                        Console.Write(mountain);
+                        SetColorHallway();
+                        Console.Write(hallway);
+                        SetColorDefault();
+                    }
+                    if(map[mapY,mapX] == '#')
+                    {
+                        SetColorCommand();
+                        Console.Write(command);
+                        SetColorDefault();
+                    }
+                    if(map[mapY,mapX] == '@')
+                    {
+                        SetColorEngineering();
+                        Console.Write(engineering);
+                        SetColorDefault();
                     }
                 }
                 SetColorBorder();
                 Console.Write(border);
+                SetColorDefault();
                 Console.Write("\n");
             }
             for(int k = 0; k < (sizeX + 3); k++)
             {
                 SetColorBorder();
                 Console.Write(border);
+                SetColorDefault();
             }
             Console.Write("\n");
-            SetColorDefault();
             Console.Write("\n");
         }
         static void DisplayMap(int scale)
@@ -186,12 +216,15 @@ namespace TextRPGMap
                 {
                     SetColorBorder();
                     Console.Write(border);
+                    SetColorDefault();
                 }
             }
             if(scale >= 3)
             {
+                SetColorBorder();
                 Console.Write(border);
                 Console.Write(border);
+                SetColorDefault();
             }
             Console.Write("\n");
             for(mapY = 0; mapY <= sizeY; mapY++)
@@ -206,28 +239,45 @@ namespace TextRPGMap
                         {
                             if(map[mapY,mapX] == '`')
                     {
-                        SetColorGrass();
-                        Console.Write(grass);
+                        SetColorSpace();
+                        Console.Write(space);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '*')
                     {
-                        SetColorTrees();
-                        Console.Write(trees);
+                        SetColorPower();
+                        Console.Write(power);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '~')
                     {
-                        SetColorWater();
-                        Console.Write(water);
+                        SetColorHabitation();
+                        Console.Write(habitation);
+                        SetColorDefault();
                     }
                     if(map[mapY,mapX] == '^')
                     {
-                        SetColorMountain();
-                        Console.Write(mountain);
+                        SetColorHallway();
+                        Console.Write(hallway);
+                        SetColorDefault();
                     }
-                        }
+                    if(map[mapY,mapX] == '#')
+                    {
+                        SetColorCommand();
+                        Console.Write(command);
+                        SetColorDefault();
+                    }
+                    if(map[mapY,mapX] == '@')
+                    {
+                        SetColorEngineering();
+                        Console.Write(engineering);
+                        SetColorDefault();
+                    }
+            }
                     }
                     SetColorBorder();
                     Console.Write(border);
+                    SetColorDefault();
                     Console.Write("\n");
                 }
             }
@@ -237,15 +287,17 @@ namespace TextRPGMap
                 {
                     SetColorBorder();
                     Console.Write(border);
+                    SetColorDefault();
                 }
             }
             if(scale >= 3)
             {
+                SetColorBorder();
                 Console.Write(border);
                 Console.Write(border);
             }
-            Console.Write("\n");
             SetColorDefault();
+            Console.Write("\n");
             Console.Write("\n");
         }
         static void SetColorDefault()
@@ -253,30 +305,40 @@ namespace TextRPGMap
             Console.ForegroundColor = ConsoleColor.White;
             Console.BackgroundColor = ConsoleColor.Black;
         }
-        static void SetColorMountain()
+        static void SetColorHallway()
         {
-            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.ForegroundColor = ConsoleColor.Gray;
             Console.BackgroundColor = ConsoleColor.Gray;
         }
-        static void SetColorGrass()
+        static void SetColorSpace()
         {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.BackgroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.BackgroundColor = ConsoleColor.Black;
         }
-        static void SetColorTrees()
+        static void SetColorPower()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
-            Console.BackgroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.BackgroundColor = ConsoleColor.Gray;
         }
-        static void SetColorWater()
+        static void SetColorHabitation()
         {
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.BackgroundColor = ConsoleColor.Blue;
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.BackgroundColor = ConsoleColor.Gray;
         }
         static void SetColorBorder()
         {
-            Console.ForegroundColor = ConsoleColor.DarkRed;
-            Console.BackgroundColor = ConsoleColor.Red;
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.BackgroundColor = ConsoleColor.Black;
+        }
+        static void SetColorCommand()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.BackgroundColor = ConsoleColor.Gray;
+        }
+        static void SetColorEngineering()
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.BackgroundColor = ConsoleColor.Gray;
         }
     }
 }
